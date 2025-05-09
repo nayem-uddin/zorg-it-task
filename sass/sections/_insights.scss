@@ -1,0 +1,25 @@
+@use "../bootstrap-mod" as *;
+
+.articles-container {
+  padding-top: 5px;
+  background-color: black;
+  @include media-breakpoint-up(md) {
+    width: 60%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 40%;
+  }
+}
+.article {
+  background-image: linear-gradient(to right, rgb(24, 24, 94) 2%, black 10%);
+  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  span {
+    background-image: linear-gradient(90deg, rgb(10, 118, 219), white);
+    background-clip: text;
+    color: transparent;
+  }
+}

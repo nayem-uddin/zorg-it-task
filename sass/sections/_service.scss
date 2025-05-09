@@ -1,0 +1,49 @@
+@use "../bootstrap-mod" as *;
+
+.contents {
+  width: 70%;
+  margin: 4rem auto;
+  .text {
+    color: gray;
+    line-height: 3.2rem;
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 90%;
+    margin: 3rem auto;
+    .text {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+.collection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .card {
+    width: 286px;
+    height: 314px;
+    border-radius: 20px;
+    border: 1.4px solid;
+    @include media-breakpoint-down(md) {
+      width: 180px;
+      height: fit-content;
+    }
+    &:nth-child(4) {
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-6rem);
+      }
+    }
+    &:nth-child(3) {
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-2rem);
+      }
+    }
+    &:nth-child(1) {
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-3rem);
+      }
+    }
+  }
+}

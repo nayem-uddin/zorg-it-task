@@ -1,0 +1,37 @@
+@use "../bootstrap-mod" as *;
+.footer {
+  margin-top: 30px;
+  a {
+    color: whitesmoke;
+  }
+  &-left {
+    p {
+      line-height: 3.5rem;
+      @include media-breakpoint-down(md) {
+        line-height: 2.5rem;
+      }
+    }
+    .h1 {
+      background-image: linear-gradient(
+        to right,
+        rgb(117, 117, 204) 1%,
+        skyblue 10%,
+        rgb(117, 117, 204) 60%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+    .copyright {
+      color: silver;
+      margin-top: 1.5rem;
+    }
+  }
+  &-mid {
+    box-sizing: border-box;
+    div {
+      a {
+        color: silver;
+      }
+    }
+  }
+}
