@@ -4,14 +4,14 @@ export default function Showcase() {
   return (
     <div className="showcase">
       <Item
-        title={`Rely`}
+        title={`alcohol tracker`}
         desc={"All-In-One (AIO) Service"}
-        imgSrc={"/rely.png"}
+        imgSrc={"/portfolio/alc-tracker.png"}
       />
       <Item
         title={`Finace website`}
         desc={"All-In-One (AIO) Service"}
-        imgSrc={"/finance.png"}
+        imgSrc={"/portfolio/finance.png"}
       />
     </div>
   );

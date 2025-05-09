@@ -1,6 +1,8 @@
 @use "../bootstrap-mod" as *;
 .footer {
   margin-top: 30px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
   a {
     color: whitesmoke;
   }
@@ -8,7 +10,8 @@
     p {
       line-height: 3.5rem;
       @include media-breakpoint-down(md) {
-        line-height: 2.5rem;
+        line-height: 1.2rem;
+        font-size: 1.2rem !important;
       }
     }
     .h1 {
@@ -21,17 +24,35 @@
       background-clip: text;
       color: transparent;
     }
-    .copyright {
-      color: silver;
-      margin-top: 1.5rem;
-    }
   }
   &-mid {
+    display: flex;
+    align-items: end;
     box-sizing: border-box;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
     div {
       a {
         color: silver;
       }
+      margin-right: 10px;
+      @include media-breakpoint-up(md) {
+        margin-right: 40px;
+      }
     }
+  }
+  @include media-breakpoint-down(md) {
+    font-size: small;
+  }
+}
+.copyright {
+  color: silver;
+  margin-top: 1.5rem;
+  @include media-breakpoint-down(md) {
+    font-size: small !important;
+    margin-top: 0;
   }
 }

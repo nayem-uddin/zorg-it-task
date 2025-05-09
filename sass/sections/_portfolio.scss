@@ -8,9 +8,15 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    @include media-breakpoint-down(md) {
+      font-size: small;
+    }
   }
   &-card {
-    margin: 0 8px;
+    margin: 0 10px;
+    @include media-breakpoint-down(sm) {
+      margin: 0 4px;
+    }
     width: 554px;
     height: 566px;
     background: black;
@@ -40,5 +46,18 @@
         }
       }
     }
+  }
+}
+.open {
+  background-color: rgba(147, 209, 253, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: scale(1.2);
+  border-radius: 56px;
+  padding: 5px 8px;
+  @include media-breakpoint-down(md) {
+    border-radius: 20px;
+    transform: scale(1);
+    width: 80px;
   }
 }

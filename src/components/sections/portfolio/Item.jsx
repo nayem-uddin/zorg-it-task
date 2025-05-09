@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "react-bootstrap-icons";
+
 export default function Item({ title, desc, imgSrc }) {
   return (
     <div className="card portfolio-card">
@@ -6,15 +8,16 @@ export default function Item({ title, desc, imgSrc }) {
       </div>
 
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+        <h5 className="card-title text-capitalize">{title}</h5>
         <div className="d-flex justify-content-between">
           <div>
             <p className="card-text">{desc}</p>
           </div>
           <div>
-            <a href="#" className="btn btn-primary">
-              Open
-            </a>
+            <button className="open">
+              Open &nbsp;
+              <ArrowUpRight />
+            </button>
           </div>
         </div>
       </div>

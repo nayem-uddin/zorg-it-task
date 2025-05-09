@@ -12002,13 +12002,23 @@ nav .nav-link {
   justify-content: center;
   margin-bottom: 10px;
 }
+@media (max-width: 767.98px) {
+  .portfolio .showcase {
+    font-size: small;
+  }
+}
 .portfolio-card {
-  margin: 0 8px;
+  margin: 0 10px;
   width: 554px;
   height: 566px;
   background: black;
   text-align: left;
   cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  .portfolio-card {
+    margin: 0 4px;
+  }
 }
 @media (max-width: 767.98px) {
   .portfolio-card {
@@ -12035,37 +12045,55 @@ nav .nav-link {
   content: "";
 }
 
+.open {
+  background-color: rgba(147, 209, 253, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: scale(1.2);
+  border-radius: 56px;
+  padding: 5px 8px;
+}
+@media (max-width: 767.98px) {
+  .open {
+    border-radius: 20px;
+    transform: scale(1);
+    width: 80px;
+  }
+}
+
 .articles-container {
   padding-top: 5px;
   background-color: black;
 }
-@media (min-width: 768px) {
-  .articles-container {
-    width: 60%;
-  }
-}
-@media (min-width: 992px) {
-  .articles-container {
-    width: 40%;
-  }
-}
 
 .article {
-  background-image: linear-gradient(to right, rgb(24, 24, 94) 2%, black 10%);
-  padding-left: 10px;
+  background-image: linear-gradient(to right, rgba(115, 191, 250, 0.2) 2%, black 10%);
+  padding: 20px 0 10px 10px;
   margin-bottom: 10px;
-  padding-top: 10px;
+  box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Rethink Sans", sans-serif;
+}
+@media (min-width: 768px) {
+  .article {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    margin-bottom: 15px;
+  }
 }
 .article span {
-  background-image: linear-gradient(90deg, rgb(10, 118, 219), white);
+  background-image: linear-gradient(90deg, rgb(60, 151, 245), rgb(115, 191, 250), rgb(147, 209, 253));
   background-clip: text;
   color: transparent;
 }
 
 .footer {
   margin-top: 30px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
 }
 .footer a {
   color: whitesmoke;
@@ -12075,7 +12103,8 @@ nav .nav-link {
 }
 @media (max-width: 767.98px) {
   .footer-left p {
-    line-height: 2.5rem;
+    line-height: 1.2rem;
+    font-size: 1.2rem !important;
   }
 }
 .footer-left .h1 {
@@ -12083,26 +12112,56 @@ nav .nav-link {
   background-clip: text;
   color: transparent;
 }
-.footer-left .copyright {
-  color: silver;
-  margin-top: 1.5rem;
-}
 .footer-mid {
+  display: flex;
+  align-items: end;
   box-sizing: border-box;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .footer-mid {
+    margin-bottom: 40px;
+  }
+}
+.footer-mid div {
+  margin-right: 10px;
 }
 .footer-mid div a {
   color: silver;
+}
+@media (min-width: 768px) {
+  .footer-mid div {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
+    font-size: small;
+  }
+}
+
+.copyright {
+  color: silver;
+  margin-top: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .copyright {
+    font-size: small !important;
+    margin-top: 0;
+  }
 }
 
 * {
   color: white;
   max-width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background-image: url("/space.jpg"), url("/new-bg-2.jpg"), url("/solar-2.jfif"), url("/space-4.jfif"), url("/solar.jfif");
-  background-position: 0 0, 0 195px, 0 430px, 0 650px, 0 850px;
+  background-position: 0 0, 0 185px, 0 420px, 0 650px, 0 850px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: contain, contain, contain, contain, contain;
   background-attachment: fixed, fixed, fixed, fixed, fixed;
@@ -12117,6 +12176,21 @@ body {
   color: transparent;
   font-size: 2rem;
   text-transform: capitalize;
+}
+
+.btn {
+  border-radius: 20px;
+  font-size: small;
+}
+
+.special {
+  padding: 10px 20px;
+  background-image: linear-gradient(90deg, rgb(115, 191, 250), rgb(60, 151, 245));
+}
+@media (min-width: 992px) {
+  .special {
+    transform: scale(1.2);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

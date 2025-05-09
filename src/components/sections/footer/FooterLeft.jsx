@@ -6,7 +6,6 @@ export default function FooterLeft() {
       <p className="h1 display-5 fw-semibold">
         <a href="mailto:hey@pixll.com">hey@pixll.com</a>
       </p>
-      <p className="copyright">&copy; 2017-2025 Pixll</p>
     </div>
   );
 }

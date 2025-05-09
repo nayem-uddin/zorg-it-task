@@ -3,22 +3,33 @@
 .articles-container {
   padding-top: 5px;
   background-color: black;
-  @include media-breakpoint-up(md) {
-    width: 60%;
-  }
-  @include media-breakpoint-up(lg) {
-    width: 40%;
-  }
 }
 .article {
-  background-image: linear-gradient(to right, rgb(24, 24, 94) 2%, black 10%);
-  padding-left: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(115, 191, 250, 0.2) 2%,
+    black 10%
+  );
+  padding: 20px 0 10px 10px;
   margin-bottom: 10px;
-  padding-top: 10px;
+  box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Rethink Sans", sans-serif;
+  @include media-breakpoint-up(md) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    margin-bottom: 15px;
+  }
   span {
-    background-image: linear-gradient(90deg, rgb(10, 118, 219), white);
+    background-image: linear-gradient(
+      90deg,
+      rgba(60, 151, 245, 1),
+      rgba(115, 191, 250, 1),
+      rgba(147, 209, 253, 1)
+    );
     background-clip: text;
     color: transparent;
   }

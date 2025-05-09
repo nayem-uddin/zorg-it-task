@@ -9,11 +9,12 @@
   color: white;
   max-width: 100%;
   margin: 0;
+  padding: 0;
 }
 body {
   background-image: url("/space.jpg"), url("/new-bg-2.jpg"),
     url("/solar-2.jfif"), url("/space-4.jfif"), url("/solar.jfif");
-  background-position: 0 0, 0 195px, 0 430px, 0 650px, 0 850px;
+  background-position: 0 0, 0 185px, 0 420px, 0 650px, 0 850px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: contain, contain, contain, contain, contain;
   background-attachment: fixed, fixed, fixed, fixed, fixed;
@@ -26,5 +27,21 @@ body {
     color: transparent;
     font-size: 2rem;
     text-transform: capitalize;
+  }
+}
+.btn {
+  border-radius: 20px;
+  font-size: small;
+}
+
+.special {
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(115, 191, 250, 1),
+    rgba(60, 151, 245, 1)
+  );
+  @include media-breakpoint-up(lg) {
+    transform: scale(1.2);
   }
 }
