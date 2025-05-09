@@ -12164,7 +12164,7 @@ body {
   background-image: url("/space.jpg"), url("/new-bg-2.jpg"), url("/solar-2.jfif"), url("/space-4.jfif"), url("/solar.jfif");
   background-position: 0 0, 0 185px, 0 420px, 0 650px, 0 850px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: contain, contain, contain, contain, contain;
+  background-size: auto, auto, auto, auto, auto;
   background-attachment: fixed, fixed, fixed, fixed, fixed;
 }
 
