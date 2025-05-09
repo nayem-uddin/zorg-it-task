@@ -36,4 +36,6 @@
   - All the partials are put in the `sections` sub-directory
   - All the partials are integrated into the `style.scss` file
   - The `bootstrap` partial contains the Bootstrap classes
-  - The `style.scss` file is compiled to a CSS file under `css` folder, which is linked to the HTML file
+  - The `style.scss` file is compiled to a CSS file under `css` folder, which is linked to the HTML file. It contains all the partials and some universal design properties
+
+- All the images are in the `public` folder
