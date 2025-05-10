@@ -13,11 +13,13 @@
 }
 body {
   background-image: url("/space.jpg"), url("/new-bg-2.jpg"),
-    url("/solar-2.jfif"), url("/space-4.jfif"), url("/solar.jfif");
-  background-position: 0 0, 0 185px, 0 420px, 0 650px, 0 850px;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, auto, auto, auto;
-  background-attachment: fixed, fixed, fixed, fixed, fixed;
+    url("/solar-2.jfif"), url("/space-4.jfif"), url("/solar.jfif"),
+    url("/space.jpg");
+  background-position: 0 0, 0 185px, 0 420px, 0 650px, 0 850px, 0 1000px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-size: auto, auto, auto, auto, auto, auto;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
 }
 .head-section {
   text-align: center;
