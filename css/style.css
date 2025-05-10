@@ -11858,7 +11858,7 @@ nav {
   border: 1px solid rgba(199, 185, 185, 0.308);
   width: 60%;
   margin: 32px auto;
-  border-radius: 80px;
+  border-radius: 30px;
 }
 nav .nav-link {
   color: white;
